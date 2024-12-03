@@ -59,18 +59,17 @@ class IngredientExtractor:
         """
         return """
         Act as a food expert.
-        Get all the ingredients from this image if any,
-        if not found then give not found any,
-        now for each ingredient check if it is safe or not,
-        sort them by safe and unsafe, also how it is safe and if unsafe then why.
-        Do not add comments or additional information.
+        Find all the ingredients from this image if any,
+        if not found then return "Not found any".
+        Now for each ingredient check if it is safe or not.
+        Sort them by safe and unsafe, also how it is safe and if unsafe then why.
 
         Your output should be in following markdown example format:
-        ### Unsafe ingredients:
+        ### Unsafe:
         - **Ingredient 1**    Health Benefits of ingredient 1
         - **Ingredient 2**    Health Benefits of ingredient 2
         ...
-        ### Safe ingredients:
+        ### Safe:
         - **Ingredient 3**    Health risk of ingredient 3
         - **Ingredient 4**    Health risk of ingredient 4
         ...
