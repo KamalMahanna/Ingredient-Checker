@@ -4,4 +4,3 @@ numpy
 Pillow
 pytesseract
 google-generativeai
-python-dotenv
